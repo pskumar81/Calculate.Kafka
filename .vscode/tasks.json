@@ -1,0 +1,21 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build Solution",
+			"type": "shell",
+			"command": "dotnet build",
+			"problemMatcher": [
+				"$msCompile"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Run API",
+			"type": "shell",
+			"command": "dotnet run --project Calculator.Kafka.API",
+			"isBackground": true,
+			"group": "test"
+		}
+	]
+}

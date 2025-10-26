@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-Calculator.Kafka.Worker-48b03838-fe45-4378-aa48-4c9619af222a</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Calculator.Kafka.Models\Calculator.Kafka.Models.csproj" />
+    <ProjectReference Include="..\Calculator.Kafka.Infrastructure\Calculator.Kafka.Infrastructure.csproj" />
+  </ItemGroup>
+</Project>
